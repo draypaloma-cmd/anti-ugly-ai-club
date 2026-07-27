@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+locale: "fr"
+
+collections:
+  - name: "posters"
+    label: "Posters"
+    label_singular: "Poster"
+    files:
+      - file: "posters.json"
+        label: "Liste des posters"
+        name: "posters"
+        fields:
+          - label: "Posts"
+            name: "posts"
+            widget: "list"
+            summary: "{{fields.title}} {{fields.featured}}"
+            fields:
+              - { label: "ID (unique, ex: p7)", name: "id", widget: "string" }
+              - { label: "Kicker (catégorie, ex: Event flyer)", name: "kicker", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Photo", name: "imgSrc", widget: "image" }
+              - { label: "Légende (2 paragraphes possibles, séparés par une ligne vide)", name: "caption", widget: "text" }
+              - label: "Hashtags"
+                name: "hashtags"
+                widget: "list"
+              - { label: "Poster de la semaine ? (vedette en haut du site)", name: "featured", widget: "boolean", default: false }
