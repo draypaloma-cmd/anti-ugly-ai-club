@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>anti ugly ai club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+  <header class="header">
+    <div class="logo">anti ugly<br>ai club</div>
+    <nav class="nav">
+      <a href="about.html" class="nav-link">About the club</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>A gallery of the AI-generated posters we keep seeing everywhere. Never thought I'd miss bad design, at least it used to be handmade.</h1>
+    <p>Click any piece to see it larger, with a few notes on why it's here.</p>
+  </section>
+
+  <section class="featured">
+    <div class="featured-inner">
+      <div class="featured-image-wrap" data-open="feature">
+        <div class="badge"><span class="badge-trophy">🏆</span><span>Ugly Poster of the Week <span class="badge-winner">WINNER!</span></span></div>
+        <img id="featuredImage" src="" alt="Featured poster" class="featured-image">
+      </div>
+      <div class="featured-text">
+        <h2>Why this one stuck with me</h2>
+        <div id="featuredCaption"></div>
+        <div class="tags" id="featuredTags"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="filter-indicator" id="filterIndicator" hidden>
+    <span>Filtered by</span>
+    <span class="filter-tag" id="filterTagLabel"></span>
+    <button id="clearFilter">clear ×</button>
+  </section>
+
+  <section class="gallery" id="gallery"></section>
+
+  <footer class="footer">
+    <span>anti ugly ai club — updated occasionally</span>
+    <div class="social">
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+  </footer>
+
+</div>
+
+<div class="modal-overlay" id="modalOverlay" hidden>
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <img id="modalImage" class="modal-image" src="" alt="">
+    <div class="modal-text">
+      <div class="modal-kicker" id="modalKicker"></div>
+      <h2 id="modalTitle"></h2>
+      <p id="modalCaption"></p>
+      <div class="tags" id="modalTags"></div>
+    </div>
+  </div>
+</div>
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+<script src="script.js"></script>
+</body>
+</html>
