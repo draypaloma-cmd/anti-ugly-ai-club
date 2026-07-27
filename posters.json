@@ -6,7 +6,11 @@
       "title": "Ugly Poster of the Week",
       "imgSrc": "images/feature-poster.jpg",
       "caption": "Write your take here — what the piece is doing typographically, the choices behind the layout, colour, or type, and why it works (or doesn't quite).\n\nA second paragraph if there's more to say — process notes, references, or what you'd change next time.",
-      "hashtags": ["#typography", "#poster", "#design"],
+      "hashtags": [
+        "#typography",
+        "#poster",
+        "#design"
+      ],
       "featured": true
     },
     {
@@ -15,7 +19,11 @@
       "title": "Late Summer Market",
       "imgSrc": "images/p1.jpg",
       "caption": "A one-day market poster — leaning on tight type and a single colour block to keep it legible from across the street.",
-      "hashtags": ["#flyer", "#market", "#typography"],
+      "hashtags": [
+        "#flyer",
+        "#market",
+        "#typography"
+      ],
       "featured": false
     },
     {
@@ -24,7 +32,10 @@
       "title": "Night Sessions Vol. 3",
       "imgSrc": "images/p2.jpg",
       "caption": "Loud type, quiet palette. The grid holds everything together even at small sizes.",
-      "hashtags": ["#gigposter", "#music"],
+      "hashtags": [
+        "#gigposter",
+        "#music"
+      ],
       "featured": false
     },
     {
@@ -33,7 +44,10 @@
       "title": "Studio Opening",
       "imgSrc": "images/p3.jpg",
       "caption": "A simple announcement piece — most of the work here is in the spacing, not the imagery.",
-      "hashtags": ["#branding", "#poster"],
+      "hashtags": [
+        "#branding",
+        "#poster"
+      ],
       "featured": false
     },
     {
@@ -42,7 +56,10 @@
       "title": "Winter Pop-up",
       "imgSrc": "images/p4.jpg",
       "caption": "Seasonal but restrained — one accent colour, generous margins.",
-      "hashtags": ["#flyer", "#seasonal"],
+      "hashtags": [
+        "#flyer",
+        "#seasonal"
+      ],
       "featured": false
     },
     {
@@ -51,16 +68,22 @@
       "title": "Site Launch",
       "imgSrc": "images/p5.jpg",
       "caption": "A wide banner treatment, cropped here to its poster proportions.",
-      "hashtags": ["#banner", "#launch"],
+      "hashtags": [
+        "#banner",
+        "#launch"
+      ],
       "featured": false
     },
     {
       "id": "p6",
       "kicker": "Gig poster",
       "title": "Corner Stage",
-      "imgSrc": "images/p6.jpg",
+      "imgSrc": "/images/img_7200.png",
       "caption": "Hand-set feel from a very small type system — three sizes, one weight.",
-      "hashtags": ["#gigposter", "#minimal"],
+      "hashtags": [
+        "#gigposter",
+        "#minimal"
+      ],
       "featured": false
     }
   ]
